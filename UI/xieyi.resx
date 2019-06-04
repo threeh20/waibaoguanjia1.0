@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>            虹软公司外包管家软件开发外包协议如下：
+甲方: (以下简称甲方)乙方: 上海创轩网络科技有限公司(以下简称乙方)甲乙双方经过友好协商，依据《中华人民共和国合同法》的规定，就甲方委托乙方负责甲方电脑、网络设备的维护事宜签署以下IT外包服务合同，细则如下：
+1.甲方为了实现公司日常办公设备使用的高效化，降低办公设备使用成本，提高办公设备的实际使用效能，充分发挥现有管理网络等办公设备价值，提高企业效益，决定由乙方负责为甲方提供终端电脑系统、显示器设备等办公设备的维护，设备清单详见《附件》。
+2.甲乙双方约定，维护费用及结算办法：包月服务，__台电脑设备，__元 / 台，合计优惠服务费为 ___元/ 月，大写：人民币_______整。乙方于次月的6日前开具上月服务费发票，甲方凭发票付款。
+3.甲方指定专人负责与乙方对口联络沟通，每次维护前明确提出要求，准确描述故障现象等，为乙方提供出入许可，现场引导协调，提供现场维护需要的基本条件，有利乙方工作人员准确快速处理，并对维护工单监督签名确认。为保障甲方利益，维护前甲方要和乙方工作人员申明需注意事项，预防维护工作造成不必要的额外损失，每次维护作业必须经甲方经办人在工单上签名后，乙方才开始工作。
+4.在合同签订后３日内，乙方应安排专门的专业技术人员与甲方的负责人一起对《附件》所列的设备进行现场全面检查复核，并对每个设备编码登记和贴标。设备登记一览表一式两份，甲乙双方各保存一份。维护以该表登记在册的设备为乙方责任范围。甲方不得单方撕毁设备上的编码封标，否则，乙方不予维护。对不属于《附件》登记的设备，乙方不承担维护责任。
+5.日常巡检：1次 / 月；定期如下：（1）硬件保养及故障诊断，如涉及到电脑、主板、显示器的线路板、电源的芯片级维修其费用另计，不属于此合同范围内责任，包括为甲方提供的更换硬件、配件建议等，其费用都需另计，具体价格甲乙双方友好协商决定。（2）软件调试、升级，数据备份及维护，以提高计算机的病毒、木马、黑客、恶意代码等的防御能力。（3）网络畅通，网络安全及保障防护，排除网络故障，网络查毒、杀毒。网络的提升事宜与用户商议后决定。注：乙方服务为甲方提供安全稳定的办公平台，（不包括各类特殊应用软件的保障），如：ERP应用软件，设计专用软件，苹果机设计专用软件等，如需乙方提供维护其费用通过友好协商另计。乙方建议甲方使用正版软件，其软件的版权纠纷均由甲方自行承担。
+6.乙方在接到甲方维护要求后必须尽快给予明确处理，复杂困难问题，不能及时解决的必须给甲方明确答复处理的措施和需要的准备时间。通常到达现场的时间为约2~4小时，如情况特殊，甲乙双方本着相互理解，友好沟通的方式协商，尽快处理故障，解决问题并维护完工后及时交付甲方使用。
+7.乙方对甲方设备维护范围仅限于此合同注明地址的贴标设备，如甲方出现地址变迁等情况造成乙方维护成本增加，包月维护费用将酌情增加。如甲方要求维护贴标范围外的设备，其费用可按单次维护维修结算，也可将该设备加入包月合同按月结，具体按实际情况甲乙双方友好协商另计。
+8.针对人为故障甲方未经乙方许可，人为恶意损坏损毁、拆开《附件》所登记设备换配件等，乙方将不承担任何维护责任和其他相关法律责任。如需乙方提供维护维修其费用通过友好协商另计。甲方人员擅自对路由器、交换机等网络设备进行的操作，如果产生的后果影响到整个大网络全部瘫痪，乙方将按_80_元 / 台 / 次收取人工费，硬件费用另计。并将事故原由通报甲方相关领导。
+9.关于涉及知识产权和版权的相关声明：甲方双方均严格遵守《中华人民共和国著作权》《中华人民共和国专利法》《中华人民共和国信息法》及其有关条例。未经对方许可不得泄露对方技术和商业秘密。
+10.解决合同纠纷的方法：在本合同履行过程中发生争议，双方应当协商解决。协商不成的，双方约定向深圳仲裁委员会申请仲裁。
+11.本合同有效期自____年 月 _ 日起至_____年 月 日。若合同到期前一个月内双方均不提出终止协议的书面要求，该合同自动延期____年，除非一方在合同顺延期内对合同履行提前一个月内以书面形式提出异议要求终止合同，则顺延期满后合同有效期将自动再次顺延，顺延次数不限，每次顺延有效期为 __ 年。
+12.合同生效期内，甲、乙双方均不得无故取消合同，如需变动合同内容，必须以书面形式提出申请，如双方达成一致由双方代表人签章生效。
+13.本合同正本一式二份，甲乙双方各执一份，具有同等法律效力，自甲乙双方代表人签章后 生效。附件属于合同不可分割的一部分，经签章确认生效，与本合同具有同等效力。</value>
+  </data>
+</root>
