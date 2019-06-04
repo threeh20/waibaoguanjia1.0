@@ -1,0 +1,685 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9538F674-F43A-4F64-8A48-C57F02327449}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Free-Converter.com-logo-91461801.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AipSdk, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AipSdk.dll</HintPath>
+    </Reference>
+    <Reference Include="Arction.WinForms.Charting.LightningChartUltimate, Version=8.2.3.4001, Culture=neutral, PublicKeyToken=6484d7bb14b95dd3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Arction.WinForms.Charting.LightningChartUltimate.dll</HintPath>
+    </Reference>
+    <Reference Include="BLL">
+      <HintPath>..\RLL\bin\Debug\BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="DAL">
+      <HintPath>..\DAL\bin\Debug\DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisSkin4, Version=2006.3.22.45, Culture=neutral, PublicKeyToken=127be25a6db25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\IrisSkin4.dll</HintPath>
+    </Reference>
+    <Reference Include="Model">
+      <HintPath>..\DAL\bin\Debug\Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Paway.Windows.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Paway.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Paway.Windows.Helper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Paway.Windows.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Paway.Windows.Resource, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Paway.Windows.Resource.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Properties.Resources.Designer.cs">
+      <HintPath>..\DAL\bin\Debug\Properties.Resources.Designer.cs.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebKit.Interop">
+      <HintPath>..\..\..\WebKit.NET-0.5-bin-cairo\bin\WebKit.Interop.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="WebKitBrowser, Version=0.5.0.0, Culture=neutral, PublicKeyToken=b967213f6d29a3be, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WebKitBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WPFMediaKit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WPFMediaKit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FTPxiazai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTPxiazai.Designer.cs">
+      <DependentUpon>FTPxiazai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="log2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="log2.Designer.cs">
+      <DependentUpon>log2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usesType_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usesType_Form.Designer.cs">
+      <DependentUpon>usesType_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiangmuchakan1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiangmuchakan1.Designer.cs">
+      <DependentUpon>xiangmuchakan1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiangmuchakan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiangmuchakan.Designer.cs">
+      <DependentUpon>xiangmuchakan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplit.Designer.cs">
+      <DependentUpon>frmSplit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="guanlizhongxin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="guanlizhongxin.Designer.cs">
+      <DependentUpon>guanlizhongxin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="guanlizhongxin1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="guanlizhongxin1.Designer.cs">
+      <DependentUpon>guanlizhongxin1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gerenzhongxin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gerenzhongxin.Designer.cs">
+      <DependentUpon>gerenzhongxin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gerenzhongxin1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gerenzhongxin1.Designer.cs">
+      <DependentUpon>gerenzhongxin1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete.Designer.cs">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jiaoliufenxiang1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jiaoliufenxiang1.Designer.cs">
+      <DependentUpon>jiaoliufenxiang1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jindutongji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jindutongji.Designer.cs">
+      <DependentUpon>jindutongji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myHook.cs" />
+    <Compile Include="tongjifenxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tongjifenxi.Designer.cs">
+      <DependentUpon>tongjifenxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tongjifenxi1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tongjifenxi1.Designer.cs">
+      <DependentUpon>tongjifenxi1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiangmucenter1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiangmucenter1.Designer.cs">
+      <DependentUpon>xiangmucenter1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiangmuzhuizong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiangmuzhuizong.Designer.cs">
+      <DependentUpon>xiangmuzhuizong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xieyi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xieyi.Designer.cs">
+      <DependentUpon>xieyi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form12.Designer.cs">
+      <DependentUpon>Form12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print.Designer.cs">
+      <DependentUpon>Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="log.Designer.cs">
+      <DependentUpon>log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IdCard_UI2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IdCard_UI2.Designer.cs">
+      <DependentUpon>IdCard_UI2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiangmucenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiangmucenter.Designer.cs">
+      <DependentUpon>xiangmucenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insert.Designer.cs">
+      <DependentUpon>Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="renyuantongji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="renyuantongji.designer.cs">
+      <DependentUpon>renyuantongji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiangmuxiangqing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiangmuxiangqing.Designer.cs">
+      <DependentUpon>xiangmuxiangqing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kaoqinguanli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kaoqinguanli.Designer.cs">
+      <DependentUpon>kaoqinguanli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiangmujindu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiangmujindu.Designer.cs">
+      <DependentUpon>xiangmujindu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiangmutongji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiangmutongji.Designer.cs">
+      <DependentUpon>xiangmutongji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiangmuwenjian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiangmuwenjian.Designer.cs">
+      <DependentUpon>xiangmuwenjian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="richenganpai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="richenganpai.Designer.cs">
+      <DependentUpon>richenganpai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yuangongguanli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yuangongguanli.Designer.cs">
+      <DependentUpon>yuangongguanli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pingfentongji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pingfentongji.Designer.cs">
+      <DependentUpon>pingfentongji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiangmutongzhi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiangmutongzhi.Designer.cs">
+      <DependentUpon>xiangmutongzhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiangmutongzhi1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiangmutongzhi1.Designer.cs">
+      <DependentUpon>xiangmutongzhi1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiaoxitongzhi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaoxitongzhi.Designer.cs">
+      <DependentUpon>xiaoxitongzhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiaoxitongzhi1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaoxitongzhi1.Designer.cs">
+      <DependentUpon>xiaoxitongzhi1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiangmuwenjian1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiangmuwenjian1.Designer.cs">
+      <DependentUpon>xiangmuwenjian1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiangmutongji1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiangmutongji1.Designer.cs">
+      <DependentUpon>xiangmutongji1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gerenxinxi1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gerenxinxi1.Designer.cs">
+      <DependentUpon>gerenxinxi1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="richenganpai1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="richenganpai1.Designer.cs">
+      <DependentUpon>richenganpai1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gerenxinxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gerenxinxi.Designer.cs">
+      <DependentUpon>gerenxinxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jiaoliufenxiang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jiaoliufenxiang.Designer.cs">
+      <DependentUpon>jiaoliufenxiang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiangmuguanli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiangmuguanli.Designer.cs">
+      <DependentUpon>xiangmuguanli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiaoxiguanli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaoxiguanli.Designer.cs">
+      <DependentUpon>xiaoxiguanli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiaoxiguanli1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaoxiguanli1.Designer.cs">
+      <DependentUpon>xiaoxiguanli1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yuangongguanli1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yuangongguanli1.Designer.cs">
+      <DependentUpon>yuangongguanli1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="prom-Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prom-Form.Designer.cs">
+      <DependentUpon>prom-Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PromptingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PromptingForm.designer.cs">
+      <DependentUpon>PromptingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quanxian_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quanxian_Form.Designer.cs">
+      <DependentUpon>quanxian_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quanxian_Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quanxian_Form1.Designer.cs">
+      <DependentUpon>quanxian_Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Register_UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register_UI.Designer.cs">
+      <DependentUpon>Register_UI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Register_UI1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register_UI1.Designer.cs">
+      <DependentUpon>Register_UI1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select.Designer.cs">
+      <DependentUpon>Select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bumen.Designer.cs">
+      <DependentUpon>Bumen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uses_Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uses_Form1.Designer.cs">
+      <DependentUpon>uses_Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="web.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="web.Designer.cs">
+      <DependentUpon>web.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xitongForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xitongForm.Designer.cs">
+      <DependentUpon>xitongForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xitongForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xitongForm1.Designer.cs">
+      <DependentUpon>xitongForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jiami.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jiami.Designer.cs">
+      <DependentUpon>Jiami.cs</DependentUpon>
+    </Compile>
+    <Compile Include="renyuantongji1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="renyuantongji1.Designer.cs">
+      <DependentUpon>renyuantongji1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zhufrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zhufrom.Designer.cs">
+      <DependentUpon>zhufrom.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="guanlizhongxin.resx">
+      <DependentUpon>guanlizhongxin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="guanlizhongxin1.resx">
+      <DependentUpon>guanlizhongxin1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gerenzhongxin.resx">
+      <DependentUpon>gerenzhongxin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gerenzhongxin1.resx">
+      <DependentUpon>gerenzhongxin1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete.resx">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print.resx">
+      <DependentUpon>Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="renyuantongji1.resx">
+      <DependentUpon>renyuantongji1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tongjifenxi.resx">
+      <DependentUpon>tongjifenxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tongjifenxi1.resx">
+      <DependentUpon>tongjifenxi1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiangmucenter1.resx">
+      <DependentUpon>xiangmucenter1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiangmuzhuizong.resx">
+      <DependentUpon>xiangmuzhuizong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xieyi.resx">
+      <DependentUpon>xieyi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form12.resx">
+      <DependentUpon>Form12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="log.resx">
+      <DependentUpon>log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IdCard_UI2.resx">
+      <DependentUpon>IdCard_UI2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiangmucenter.resx">
+      <DependentUpon>xiangmucenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insert.resx">
+      <DependentUpon>Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="renyuantongji.resx">
+      <DependentUpon>renyuantongji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiangmuxiangqing.resx">
+      <DependentUpon>xiangmuxiangqing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kaoqinguanli.resx">
+      <DependentUpon>kaoqinguanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiangmujindu.resx">
+      <DependentUpon>xiangmujindu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiangmutongji.resx">
+      <DependentUpon>xiangmutongji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiangmuwenjian.resx">
+      <DependentUpon>xiangmuwenjian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="richenganpai.resx">
+      <DependentUpon>richenganpai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xitongForm1.resx">
+      <DependentUpon>xitongForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yuangongguanli.resx">
+      <DependentUpon>yuangongguanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pingfentongji.resx">
+      <DependentUpon>pingfentongji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiangmutongzhi.resx">
+      <DependentUpon>xiangmutongzhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiangmutongzhi1.resx">
+      <DependentUpon>xiangmutongzhi1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaoxitongzhi.resx">
+      <DependentUpon>xiaoxitongzhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaoxitongzhi1.resx">
+      <DependentUpon>xiaoxitongzhi1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiangmuwenjian1.resx">
+      <DependentUpon>xiangmuwenjian1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiangmutongji1.resx">
+      <DependentUpon>xiangmutongji1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gerenxinxi1.resx">
+      <DependentUpon>gerenxinxi1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="richenganpai1.resx">
+      <DependentUpon>richenganpai1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gerenxinxi.resx">
+      <DependentUpon>gerenxinxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jiaoliufenxiang.resx">
+      <DependentUpon>jiaoliufenxiang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiangmuguanli.resx">
+      <DependentUpon>xiangmuguanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaoxiguanli.resx">
+      <DependentUpon>xiaoxiguanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaoxiguanli1.resx">
+      <DependentUpon>xiaoxiguanli1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yuangongguanli1.resx">
+      <DependentUpon>yuangongguanli1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prom-Form.resx">
+      <DependentUpon>prom-Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PromptingForm.resx">
+      <DependentUpon>PromptingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="quanxian_Form.resx">
+      <DependentUpon>quanxian_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register_UI.resx">
+      <DependentUpon>Register_UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select.resx">
+      <DependentUpon>Select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bumen.resx">
+      <DependentUpon>Bumen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="web.resx">
+      <DependentUpon>web.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xitongForm.resx">
+      <DependentUpon>xitongForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jiami.resx">
+      <DependentUpon>Jiami.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zhufrom.resx">
+      <DependentUpon>zhufrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Free-Converter.com-logo-91461801.ico" />
+    <Content Include="加密.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Face\Face.csproj">
+      <Project>{9cbdf066-8f29-45cb-a0bf-28582bdf63ab}</Project>
+      <Name>Face</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
